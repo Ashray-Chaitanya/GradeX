@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeX</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/bit-logoo.webp') }}" alt="Institute Logo"> 
+            </div>
+            <h1></h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h3>Marks Analyzer</h3>
+            <form action="#">
+                <label for="USN">Enter USN: </label id="enterUsn">
+                <input type="text" id="USN" name="USN">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
