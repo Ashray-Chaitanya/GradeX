@@ -19,12 +19,32 @@
     <main>
         <div class="container">
             <h3>Marks Analyzer</h3>
-            <form action="#">
-                <label for="USN">Enter USN: </label id="enterUsn">
+            <form action="/login-complete" method = "POST">
+                <label for="USN">Enter USN: </label id="enterUsn" >
                 <input type="text" id="USN" name="USN">
                 <button type="submit">Submit</button>
             </form>
         </div>
+        <table class="table table-striped">
+                    <tr>
+                <th>Subject</th>
+                <th>Code</th>
+                <th>External</th>
+                <th>Internal</th>
+                <th>Total</th>
+        
+            </tr>
+        {% for row in students %}
+        <tr>
+            <td>{{row.0}}</td>
+            <td>{{row.1}}</td>
+            <td>{{row.2}}</td>
+            <td>{{row.3}}</td>
+            <td>{{row.4}}</td>
+
+            <td>
+{%endfor%}
+</td></table>
     </main>
 </body>
 </html>
