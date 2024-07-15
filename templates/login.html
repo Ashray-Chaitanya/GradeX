@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GradeX</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/bit.png') }}" type="image/x-icon">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
 </head>
 
@@ -14,18 +15,18 @@
     </div>
         <nav>
         <ul>
-            <li><a href="#">Sign In</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Courses</a></li>
+            <li><a href="/">Sign In </a></li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/calc">GPA Calculator</a></li>
         </ul>
     </nav>
     <main>
         <section class="login">
             <h2>Sign In</h2>
-            <form action="/login" method="post">
+            <form action="/home" method="post">
                 <div>
-                <label for="login-id">Login ID:</label>
-                <input type="text" id="login-id" name="login-id">
+                <label for="username">Username:</label>
+                <input type="text" id="login-id" name="username">
                 </div>
                 <div>
                 <label for="password">Password:</label>
@@ -40,7 +41,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; Your Institute Name 2024</p>
+        <p id="copyright">&copy; Bangalore Institute of Technology 2024</p>
     </footer>
 </body>
 

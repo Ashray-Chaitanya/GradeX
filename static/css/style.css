@@ -4,11 +4,16 @@ body {
     background-color: rgba(224, 255, 217, 0.863);
     padding: 0;
 }
+#tableHeaders,
+#tableBody {
+    display: none;
+}
 .container {
 
     max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
+    align-items: center;
+    padding: 10px;
 }
 
 form{
@@ -121,3 +126,74 @@ button:active {
     background-color: #ffffff;
             height: 10rem;
         }
+ nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem; 
+    background-color: rgb(76, 115,85); 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: 1rem; 
+  }
+  nav a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: bold; 
+  }
+  nav a:hover {
+    color: #007bff; 
+  }
+
+.table_va td {
+    padding: 10px;
+}
+
+.table_va {
+    border: 0;
+    font-size: 1.5rem;
+    border-spacing: 5px;
+    display: none;
+}
+
+#tableHeaders,
+#tableBody {
+
+    border-color: #000000;
+    border-style: groove;
+    border: 2rem;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+@media print {
+
+    /* Customize print styles here */
+    body {
+        font-size: 12px;
+        /* Adjust font size */
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        /* Make table fit the page width */
+    }
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+}
