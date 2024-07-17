@@ -9,14 +9,15 @@
 </head>
 <body>
     <header class="header">
-        <div class="container ">
-            <div class = 'logo' >
-                <img src="{{ url_for('static', filename='images/bit-logoo.webp') }}" alt="Institute Logo"> 
-        </div>
+        <div id="logoid ">
+            
+                <img src="{{ url_for('static', filename='images/bit-logoo.webp') }}" alt="Institute Logo"id="logo"> 
+        
     </div>
     </header>
      <nav>
             <ul>
+                <li><a href="/prof">Profile</a></li>
                 <li><a href="/">Sign In </a></li>
                 <li><a href="/about-us">About Us</a></li>
                 <li><a href="/calc">GPA Calculator</a></li>
@@ -26,7 +27,7 @@
         <div class="container">
             <h3>Marks Analyzer</h3>
             <form action="/login-complete" method = "POST" id="myForm">
-                <label for="USN">Enter USN: </label id="enterUsn" >
+                <label for="USN" id="enterUsn" >Enter USN: </label  >
                 <input type="text" id="USN" name="USN">
                 <button type="submit">Submit</button>
             </form>

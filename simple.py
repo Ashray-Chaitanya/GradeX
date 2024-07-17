@@ -15,10 +15,17 @@ mysql = MySQL(app)
 def home():
     return render_template("login.html")
 
-
 @app.route("/about-us", methods=["GET"])
 def about():
     return render_template("aboutUs.html")
+
+@app.route("/prof", methods=["GET"])
+def prof():
+    return render_template("prof.html")
+
+@app.route("/tt", methods=["GET"])
+def tt():
+    return render_template("tt.html")
 
 
 @app.route("/home", methods=["GET", "POST"])

@@ -1,6 +1,6 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(45deg, #b6fcd5, #88d8b0, #56ab91, #2e8b57);
+    font-family: Georgia, Times, 'Times New Roman', serif;   
+     background: linear-gradient(45deg, #b6fcd5, #88d8b0, #56ab91, #2e8b57);
     color: #fff;
     margin: 0;
     padding: 0;
@@ -53,7 +53,7 @@ footer {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px;
+    margin: 10px;
     transition: background-color 0.3s ease;
 }
 
@@ -64,7 +64,7 @@ footer {
 }
 
 .linkedin-button:hover {
-    background-color: #005582;
+    background-color: #d6cd1b;
 }
 
 

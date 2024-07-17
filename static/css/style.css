@@ -1,6 +1,8 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
+    font-family: "Roboto Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
     background-color: rgba(224, 255, 217, 0.863);
     padding: 0;
 }
@@ -23,16 +25,20 @@ form{
     align-items: center;
     gap:1rem;
 }
+#logoid {
 
-.logo {
-    float: left;
+    background-color: #fcfcfc;
+    width: 100vw;
 }
 
-.logo img {
-    display: block; 
+#logo {
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-    width: 57.5%;
+    display: block;
+    width: 30%;
 }
 
 h1 {
@@ -45,6 +51,7 @@ main {
 
 h2,
 h3 {
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -124,8 +131,10 @@ button:active {
 
 .header {
     background-color: #ffffff;
-            height: 10rem;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
  nav {
     display: flex;
     justify-content: space-around;
@@ -134,11 +143,15 @@ button:active {
     padding: 1rem 2rem; 
     background-color: rgb(76, 115,85); 
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+    width: 100vw;
   }
   nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    font-size: 1.2rem;
+        margin-right: 10px;
+
   }
   nav li {
     display: inline-block;
@@ -152,7 +165,9 @@ button:active {
   nav a:hover {
     color: #007bff; 
   }
-
+#enterUsn{
+    font-size: 1.5rem;
+}
 .table_va td {
     padding: 10px;
 }

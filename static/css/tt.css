@@ -1,0 +1,127 @@
+body {
+        font-family: "Roboto Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight:100;
+            font-style: normal;
+
+    background-color: rgba(224, 255, 217, 0.863);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#logoid {
+
+    background-color: #fcfcfc;
+    width: 100vw;
+}
+
+#logo {
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 30%;
+}
+
+.timetable-container {
+
+    width: 80%;
+    overflow-x: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 60%;
+            transform: translate(0, -50%);
+}
+
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+
+}
+
+
+.timetable th,
+.timetable td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    font-size: 1.5rem;
+}
+
+.timetable th {
+    background-color: #d0eeff;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.timetable td {
+    background-color: #fafafa;
+}
+
+.timetable tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+.timetable tr:hover td {
+    background-color: #f1f1f1;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background-color: rgb(76, 115, 85);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1rem;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00bbff;
+}
+
+
+#timetable-body tr:nth-child(n+1):nth-child(-n+5) td:first-child {
+    background-color: #d0eeff;
+    font-weight: bold;}

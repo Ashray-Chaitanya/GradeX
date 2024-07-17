@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/prof.css') }}"></head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Welcome to Your Dashboard</h1>
+        </header>
+        <div class="profile">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+            <div class="student-details">
+                <h2 id="studentName">John Doe</h2>
+                <p id="studentID">Student ID: 123456789</p>
+                <p id="studentCourse">Course: Computer Science</p>
+                <p id="studentYear">Year: Sophomore</p>
+            </div>
+        </div>
+        <div class="info-cards">
+            <div class="card">
+                <h3>Grades</h3>
+                <p>Check your latest grades.</p>
+                <button onclick="showDetails('grades')">View Grades</button>
+            </div>
+            <div class="card">
+                <h3>Schedule</h3>
+                <p>View your class schedule.</p>
+                <button onclick="showDetails('schedule')">View Schedule</button>
+            </div>
+            <div class="card">
+                <h3>Assignments</h3>
+                <p>See your upcoming assignments.</p>
+                <button onclick="showDetails('assignments')">View Assignments</button>
+            </div>
+        </div>
+        <div class="foot"> 
+        <footer class="footer">
+            <p>&copy; 2024 College Name. All rights reserved.</p>
+        </footer>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
