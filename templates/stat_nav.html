@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeX</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/bit.png') }}" type="image/x-icon">    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stats.css') }}">
+    <script src="{{ url_for('static', filename='stats.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+
+</head>
+<body>
+    <div id = "logoid">
+      <img src="{{ url_for('static', filename='images/bit-logoo.webp') }}" alt="Institute Logo" id="logo">
+  </div>
+      <nav>
+      <ul>
+          <li><a href="/">Sign In </a></li>
+          <li><a href="/about-us">About Us</a></li>
+          <li><a href="/calc">GPA Calculator</a></li>
+          <li><a href="/stats">Stats</a></li>
+          
+      </ul>
+  </nav>
+
+    <div class="link-item">
+        <span class="link-text">BCS301: </span>
+        <a href="/stats/0" class="link">stats</a>
+      </div>
+      
+      <div class="link-item">
+        <span class="link-text">BCS302: </span>
+        <a href="/stats/1" class="link">stats</a>
+      </div>
+      
+      <div class="link-item">
+        <span class="link-text">BCS303:</span>
+        <a href="/stats/2" class="link">stats</a>
+      </div>
+
+      <div class="link-item">
+        <span class="link-text">BCS304:</span>
+        <a href="/stats/3" class="link">stats</a>
+      </div>
+
+      <div class="link-item">
+        <span class="link-text">BCSL305</span>
+        <a href="/stats/4" class="link">stats</a>
+      </div>
+
+      <div class="link-item">
+        <span class="link-text">BCS307:</span>
+        <a href="/stats/5" class="link">stats</a>
+      </div>
+
+      <div class="link-item">
+        <span class="link-text">BPEK359:</span>
+        <a href="/stats/6" class="link">stats</a>
+      </div>
+
+      <div class="link-item">
+        <span class="link-text">BCS358D:</span>
+        <a href="/stats/7" class="link">stats</a>
+      </div>
+      
+
+</body>
+</html>

@@ -212,3 +212,45 @@ button:active {
         padding: 5px;
     }
 }
+
+.custom-btn {
+    background-color: #4CAF50; /* Green color */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+  }
+
+  .link-item {
+    display: flex; /* Arrange elements horizontally */
+    align-items: center; /* Vertically align text and link */
+    margin: 10px 0; /* Add some margin for spacing */
+    font-size: 1.2em;
+  }
+  
+  .link-text {
+    margin-right: 10px; /* Add spacing between text and link */
+    font-weight: bold; /* Emphasize topic text */
+    font-size: 1.2em;
+  }
+  
+  .link {
+    text-decoration: none; /* Remove underline */
+    color: blue; /* Set link color */
+    font-size: 1.2em;
+  }
+  
+  .link:hover {
+    color: underline; /* Underline link on hover (optional) */
+    text-decoration: underline; /* Necessary for hover underline */
+  }
+  
+
+  .header {
+    height: 60px;  /* Adjust the value as needed */
+  }

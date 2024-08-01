@@ -1,0 +1,141 @@
+.custom-btn {
+    background-color: #4CAF50; /* Green color */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+  }
+
+  body {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+        margin: 0;
+    padding: 0;
+    background-color: rgba(224, 255, 217, 0.863);  }
+  
+  nav {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem; 
+    background-color: rgb(76, 115,85); 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: 1rem; 
+  }
+  nav a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: bold; 
+  }
+  nav a:hover {
+    color: #00bbff; 
+  }
+
+  #logo { 
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; 
+    display: block; 
+    width: 30%; 
+  }
+  
+  .login {
+    background-color: #fff; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin: 2rem auto; 
+    padding: 2rem;
+    width:20vw;
+  }
+  .login h2 {
+    text-align: center;
+    margin-bottom: 1rem; 
+    color: #333;
+  }
+  .login form {
+    display: flex; 
+    flex-direction: column; 
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .login label {
+    margin-bottom: 0.5rem;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        outline: none;
+}
+button:hover {
+    background: rgb(76, 115, 85);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+button:active {
+    background: linear-gradient(45deg, #e05280, #e06b6b);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+}
+#logoid {
+  background-color: #fcfcfc;
+}
+
+#copyright
+{
+width: 100%;
+  text-align: center;}
+
+
+  .link-item {
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 20px 30px; /* Add some padding */
+    border: 1px solid #ddd; /* Thin gray border */
+    margin-bottom: 5px; /* Space between items */
+    display: flex; /* Align content horizontally */
+    align-items: center; /* Vertically align text */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px;
+  }
+  
+  .link-item:hover {
+    background-color: #eee; /* Change background on hover */
+    line-height: 1.5; /* Set line height for larger fonts */
+    margin-bottom: 15px;
+  }
+  
+  .link-text {
+    color: #333; /* Darker text color for better contrast */
+    font-weight: bold; /* Make course codes stand out */
+  }
+  
+  .link {
+    color: #007bff; /* Blue for links */
+  }
