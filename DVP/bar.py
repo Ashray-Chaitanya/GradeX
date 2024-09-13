@@ -1,0 +1,10 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+data = pd.read_csv("GradeX/1BI22IS31.csv")
+x = data["Subject"]
+y = data["Total" ]
+plt.bar(x,y)
+plt.title("jod")
+plt.show()
+
+

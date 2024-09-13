@@ -18,7 +18,7 @@ def form():
 def login():
         cursor = mysql.connection.cursor()
         for i in range(1,71):
-            cursor.execute(f"INSERT INTO credentials (USN, USERNAME, PASS) VALUES ('1bi22is{i}','user{i}','bit{i}');")
+            cursor.execute(f"INSERT INTO namelist (Name,USN) VALUES ('1bi22is{i}','user{i}','bit{i}');")
         mysql.connection.commit()
         cursor.close()
         return f"Done!!"
