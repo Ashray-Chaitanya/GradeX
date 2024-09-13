@@ -1,0 +1,284 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    background-color: rgba(224, 255, 217, 0.863);
+    padding: 0;
+    margin: 0;
+}
+
+#tableHeaders,
+#tableBody {
+    display: none;
+}
+
+.container {
+
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#logoid {
+
+    background-color: #fcfcfc;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10;
+}
+
+#logo {
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 30%;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    padding-top: 40px;
+}
+
+h2,
+h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-style: italic;
+}
+
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #f06595, #ff6b6b);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+button:active {
+    background: linear-gradient(45deg, #e05280, #e06b6b);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+}
+
+#USN {
+    font-size: 8px;
+
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #333;
+    background-image: linear-gradient(to bottom, #eee, #ffffff);
+    box-shadow: 0px 5px 10px rgba(128, 207, 136, 0.982);
+
+}
+
+#USN :focus {
+    outline: none;
+    box-shadow: 0px 5px 15px rgba(0, 0, 255, 0.5);
+}
+
+#USN:focus {
+    border-color: #007bff;
+}
+
+.header {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background-color: rgb(76, 115, 85);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    margin-right: 10px;
+
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+#enterUsn {
+    font-size: 1.5rem;
+}
+
+.table_va td {
+    padding: 10px;
+}
+
+.table_va {
+    border: 0;
+    font-size: 1.5rem;
+    border-spacing: 5px;
+    display: none;
+}
+
+#tableHeaders,
+#tableBody {
+
+    border-color: #000000;
+    border-style: groove;
+    border: 2rem;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+@media print {
+
+    /* Customize print styles here */
+    body {
+        font-size: 12px;
+        /* Adjust font size */
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        /* Make table fit the page width */
+    }
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+}
+
+.custom-btn {
+    background-color: #4CAF50;
+    /* Green color */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+.link-item {
+    display: flex;
+    /* Arrange elements horizontally */
+    align-items: center;
+    /* Vertically align text and link */
+    margin: 10px 0;
+    /* Add some margin for spacing */
+    font-size: 1.2em;
+}
+
+.link-text {
+    margin-right: 10px;
+    /* Add spacing between text and link */
+    font-weight: bold;
+    /* Emphasize topic text */
+    font-size: 1.2em;
+}
+
+.link {
+    text-decoration: none;
+    /* Remove underline */
+    color: blue;
+    /* Set link color */
+    font-size: 1.2em;
+}
+
+.link:hover {
+    color: underline;
+    /* Underline link on hover (optional) */
+    text-decoration: underline;
+    /* Necessary for hover underline */
+}
+
+
+.header {
+    height: 120px;
+    /* Adjust the value as needed */
+}

@@ -1,0 +1,85 @@
+body {
+    font-family: "Roboto Mono", monospace;  
+       background: linear-gradient(45deg, #b6fcd5, #88d8b0, #56ab91, #2e8b57);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    animation: gradientBackground 15s infinite;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    animation: fadeIn 2s;
+}
+
+section {
+    margin: 2em 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 3s;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    animation: fadeIn 4s;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    animation: fadeIn 5s;
+}
+.linkedin-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0077b5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.linkedin-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.linkedin-button:hover {
+    background-color: #d6cd1b;
+}
+
+
+footer a {
+    color: #b6fcd5;
+    text-decoration: none;
+}
+
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

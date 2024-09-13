@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeX</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/bit.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div id="logoid ">
+            
+                <img src="{{ url_for('static', filename='images/bit-logoo.webp') }}" alt="Institute Logo"id="logo"> 
+        
+    </div>
+    </header>
+     <nav>
+            <ul>
+                <li><a href="/prof">Profile</a></li>
+                <li><a href="/about-us">About Us</a></li>
+                <li><a href="/calc">GPA Calculator</a></li>
+                <li><a href="/stats">Statistics</a></li>
+                <li><a href="/">Logout </a></li>
+            </ul>
+        </nav>
+    <main>
+        <div class="container">
+            <h3>Marks Analyzer</h3>
+            <form action="/login-complete" method = "POST" id="myForm">
+                <label for="USN" id="enterUsn" >Enter USN: </label  >
+                <input type="text" id="USN" name="USN">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <center>
+        <table id="myTable" class="table_va">
+            <thead id="tableHeaders">
+                <tr>
+                    <th>Subject</th>
+                    <th>Code</th>
+                    <th>Internal</th>
+                    <th>External</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+        <button id="printButton" class="hidden" onclick="printData()">Print</button>
+        <div id="result">
+        
+        </div>
+</center>  
+<script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</main>
+</body>
+</html>

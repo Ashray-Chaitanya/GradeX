@@ -1,0 +1,61 @@
+body {
+  background-color: rgba(224, 255, 217, 0.863);
+font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+font-size: 1.6rem;  
+}
+  
+
+  .btn {
+    margin-top: 1rem;
+    transition: all 0.3s;
+    border: 0.15rem solid rgb(0, 0, 0);
+    border-radius: 0.7rem;
+    padding: 0.3rem;
+  }
+  
+  .btn:hover {
+    background-color: #4CAF50;
+    color: white;
+    border: 0.15rem solid white;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem; 
+    background-color: rgb(76, 115,85); 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: 1rem; 
+  }
+  nav a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: bold; 
+  }
+  nav a:hover {
+    color: #00bbff;  }
+
+  .sgpa {
+    font-weight: bold;
+  }
+
+  .invisible {
+    display: none;
+  }
+  h1{
+    font-size: 2rem;
+  }

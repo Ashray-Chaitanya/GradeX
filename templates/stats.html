@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeX</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/bit.png') }}" type="image/x-icon">    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='stats.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+
+</head>
+<body>
+  <div id = "logoid">
+    <img src="{{ url_for('static', filename='images/bit-logoo.webp') }}" alt="Institute Logo" id="logo">
+</div>
+    <nav>
+    <ul>
+        <li><a href="/about-us">About Us</a></li>
+        <li><a href="/calc">GPA Calculator</a></li>
+        <li><a href="/stats">Statistics</a></li>
+        <li><a href="/">Logout </a></li>
+
+        
+    </ul>
+</nav>
+    <h1>Welcome to the dashboard</h1>
+    <h3>MAX MARKS SCORED IN {{ sub_code }} : {{ max_marks[0] }} scoring {{ max_marks[index+1] }}<h3>
+        <br>
+    <h3>NO of students failed in  {{ sub_code }} : {{ failed }}</h3>
+<div id="pieChartContainer">
+  <canvas id="myPieChart" width="150" height="150"></canvas>
+</div>
+
+<script>
+  // Example value for failed
+  const failed = 5; // This should be dynamically set in real cases
+  const chart_data = {
+    labels: ['Passed', 'Failed'],
+    datasets: [{
+      label: 'Food Category Distribution',
+      data: [70 - failed, failed],
+      backgroundColor: ['rgba(54, 162, 235, 0.2)', 'rgba(255, 99, 132, 0.2)'],
+      borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)'],
+    }]
+  };
+  const ctx = document.getElementById('myPieChart').getContext('2d');
+  const chart = new Chart(ctx, {
+    type: 'pie', // Specify chart type as pie
+    data: chart_data, // Pass your data to the chart
+    options: {
+      maintainAspectRatio: false, // Disable aspect ratio maintenance
+    }
+  });
+</script>
+
+
+
+    <a href="{{ url_for('max', index=index) }}" class="custom-btn">Go to Detailed stats</a>
+
+
+
+</body>
+</html>

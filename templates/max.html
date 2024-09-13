@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+    
+</head>
+
+<body>
+    
+  <div id='bar'>
+    <canvas id="myChart"></canvas>
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'bar', // Change chart type if needed (e.g., 'line')
+            data: {{ charts[index][0] | tojson }}
+        });
+    </script>
+  </div>
+
+</body>
+</html>

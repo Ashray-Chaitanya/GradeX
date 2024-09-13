@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/prof.css') }}">
+    <script>
+        function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const username = getCookie('username');
+            if (username) {
+                document.getElementById('stud-name').innerHTML = `Name &#160;: ${decodeURIComponent(username)}`;
+            }
+        });
+    </script>
+</head>
+<script type="text/javascript">
+    window.history.forward();
+    function noBack() {
+        window.history.forward();
+    }
+</script>
+<script src="{{ url_for('static', filename='js/prof.js') }}" defer> 
+</script>
+
+
+<body onLoad="noBack();" onpageshow="if (event.persisted) noBack();" onUnload="">
+    <div class="navbar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="https://bit-bangalore.edu.in/department-list">Departments</a></li>
+            <li><a href="https://maps.app.goo.gl/7gxXeunJJvqyHacNA">Visit Us</a></li>
+            <li><a href="/">Logout</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename='images/entrance.jpeg') }}" alt="College Entrance">
+        </div>
+        <div class="student-profile">
+            <div class="profile-pic-container">
+                <img src="{{ url_for('static', filename='images/profile-pic.png') }}" alt="Profile Picture">
+            </div>
+            <div class="profile-details">
+                <p id="stud-name"> </p>
+                <p id="stud-usn">USN &#160;&#160;: 1BI22IS002</p>
+                <p>Branch: Information Science</p>
+            </div>
+        </div>
+        
+        <div class="button-container">
+            <a href="/home" class="button">Grades</a>
+            <a href="#" class="button">Assignments</a>
+            <a href="/tt" class="button">Timetable</a>
+        </div>
+    </div>
+</body>
+
+</html>

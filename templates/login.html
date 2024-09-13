@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeX</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/bit.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <script src="{{ url_for('static', filename='js/loginHandler.js') }}" defer></script>
+</head>
+<script type="text/javascript">
+    window.history.forward();
+    function noBack() {
+        window.history.forward();
+    }
+</script>
+
+<body onLoad="noBack();" onpageshow="if (event.persisted) noBack();" onUnload="">
+    <div id="logoid">
+        <img src="{{ url_for('static', filename='images/bit-logoo.webp') }}" alt="Institute Logo" id="logo">
+    </div>
+    <nav>
+        <ul>
+            <li> &nbsp; </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="login">
+            <h2>
+                <img src="https://cdn-icons-png.flaticon.com/512/16/16480.png" alt="User login icon"
+                    style="width:30px;height:30px;"> Sign In
+            </h2>
+            <form id="login-form">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="login-id" name="username" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section class="features">
+        </section>
+        <section class="cta">
+        </section>
+    </main>
+    <footer>
+        <p id="copyright">&copy; Bangalore Institute of Technology 2024</p>
+    </footer>
+</body>
+
+</html>

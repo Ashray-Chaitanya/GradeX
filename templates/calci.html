@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2022 Scheme SGPA Calculator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/calci.css') }}"/>
+  <link rel="icon" href="{{ url_for('static', filename='images/bit.png') }}" type="image/x-icon">
+  <script src="{{ url_for('static', filename='js/calci.js') }}" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script> 
+</head>
+
+<body>
+  <nav>
+    <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/prof">Profile</a></li>
+        <li><a href="/">Logout</a></li>
+    </ul>
+  </nav>
+  <section class="main-content m-2 flex flex-col items-center align-middle">
+    <h1 class=" m-16 sgpa">SGPA Calculator</h1>
+    <h1 class="text-2xl">Enter Your Marks:</h1>
+    <div
+      class="subjects-container m-2 flex h-fit w-fit flex-col items-center justify-center rounded-lg border-2 border-solid border-black p-5 align-middle">
+      <div class="sub-1 m-2 flex flex-row items-center justify-center gap-2 align-middle">
+        <label for="sub1-marks">BCS301 :</label>
+        <input type="number" id="sub1-marks" class="w-16 rounded-md border-2 border-solid border-black" />
+        <p class="">Credits: 4</p>
+      </div>
+      <div class="sub-2 m-2 flex flex-row items-center justify-center gap-2 align-middle">
+        <label for="sub2-marks">BCS302 :</label>
+        <input type="number" id="sub2-marks" class="w-16 rounded-md border-2 border-solid border-black" />
+        <p class="">Credits: 4</p>
+      </div>
+      <div class="sub-3 m-2 flex flex-row items-center justify-center gap-2 align-middle">
+        <label for="sub3-marks">BCS303 :</label>
+        <input type="number" id="sub3-marks" class="w-16 rounded-md border-2 border-solid border-black" />
+        <p class="">Credits: 4 </p>
+      </div>
+      <div class="sub-4 m-2 flex flex-row items-center justify-center gap-2 align-middle">
+        <label for="sub4-marks">BCS304 :</label>
+        <input type="number" id="sub4-marks" class="w-16 rounded-md border-2 border-solid border-black" />
+        <p class="">Credits: 3</p>
+      </div>
+      <div class="sub-5 m-2 flex flex-row items-center justify-center gap-2 align-middle">
+        <label for="sub5-marks">BCSL305:</label>
+        <input type="number" id="sub5-marks" class="w-16 rounded-md border-2 border-solid border-black" />
+        <p class="">Credits: 1</p>
+      </div>
+      <div class="sub-6 m-2 flex flex-row items-center justify-center gap-2 align-middle">
+        <label for="sub6-marks">BSCK307:</label>
+        <input type="number" id="sub6-marks" class="w-16 rounded-md border-2 border-solid border-black" />
+        <p class="">Credits: 1</p>
+      </div>
+      <div class="sub-7 m-2 flex flex-row items-center justify-center gap-2 align-middle">
+        <label for="sub7-marks">BCS306A:</label>
+        <input type="number" id="sub7-marks" class="w-16 rounded-md border-2 border-solid border-black" />
+        <p class="">Credits: 3 </p>
+      </div>
+      <div class="sub-8 m-2 flex flex-row items-center justify-center gap-2 align-middle">
+        <label for="sub8-marks">BCS358D:</label>
+        <input type="number" id="sub8-marks" class="w-16 rounded-md border-2 border-solid border-black" />
+        <p class="">Credits: 1</p>
+      </div>
+      <p class="valid-marks-helper-text font-bold text-red-600 invisible">Please enter valid marks</p>
+      <div class="buttons-container flex flex-row gap-3">
+        <button class="reset btn">Reset</button>
+        <button class="calculate-sgpa btn">Calculate</button>
+      </div>
+    </div>
+  </section>
+  <section class="sgpa-display flex flex-col items-center justify-center invisible">
+    <div class="sgpa-display w-fit rounded-xl border-2 border-solid border-black">
+      <h1 class="p-2 align-middle text-4xl your-sgpa-text">Your SGPA is: SGPA</h1>
+    </div>
+  </section>
+</body>
+
+</html>

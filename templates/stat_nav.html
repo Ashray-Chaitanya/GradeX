@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GradeX</title>
+  <link rel="icon" href="{{ url_for('static', filename='images/bit.png') }}" type="image/x-icon">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/stats.css') }}">
+  <script src="{{ url_for('static', filename='stats.js') }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+</head>
+
+<body>
+  <div id="logoid">
+    <img src="{{ url_for('static', filename='images/bit-logoo.webp') }}" alt="Institute Logo" id="logo">
+  </div>
+  <nav>
+    <ul>
+      <li><a href="/about-us">About Us</a></li>
+      <li><a href="/calc">GPA Calculator</a></li>
+      <li><a href="/stats">Statistics</a></li>
+      <li><a href="/">Logout </a></li>
+
+    </ul>
+  </nav>
+<p class = "p-cont">
+ <strong>Statistics</strong> 
+</p>
+  <div class="container">
+    <div class="link-item">
+      <a href="/stats/0" class="link">BCS301</a>
+    </div>
+
+    <div class="link-item">
+      <a href="/stats/1" class="link">BCS302</a>
+    </div>
+
+    <div class="link-item">
+      <a href="/stats/2" class="link">BCS303</a>
+    </div>
+
+    <div class="link-item">
+      <a href="/stats/3" class="link">BCS304</a>
+    </div>
+
+    <div class="link-item">
+      <a href="/stats/4" class="link">BCSL305</a>
+    </div>
+
+    <div class="link-item">
+      <a href="/stats/5" class="link">BCS307</a>
+    </div>
+
+    <div class="link-item">
+      <a href="/stats/6" class="link">BPEK359</a>
+    </div>
+
+    <div class="link-item">
+      <a href="/stats/7" class="link">BCS358D</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
